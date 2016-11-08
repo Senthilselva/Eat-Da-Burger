@@ -27,4 +27,7 @@ var routes = require('./controllers/burgers_controller.js');
 app.use('/', routes);
 
 var PORT = process.env.PORT || 8080; // Sets an initial port. We'll use this later in our listener
-app.listen(port);
+
+app.listen(PORT, function() {
+	console.log("App listening on PORT: " + PORT);
+});
