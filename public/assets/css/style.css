@@ -16,4 +16,23 @@ header{
 	width:100%;
 }
 
+#btnOrder,
+#btnDevour{
+	color:black;
+}
 
+#burgerName
+{
+	color:black;
+}
+
+#readyBurgerBox
+{
+	color: black;
+	background-color: #ffffcc;
+	padding-right:10px;
+	padding-left: 10px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	font-size: 25px;
+}

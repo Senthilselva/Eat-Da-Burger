@@ -1,3 +1,3 @@
-INSERT INTO burgers(burger_name, devoured, createDate) VALUES ('Hamburger', true,CURDATE());
-INSERT INTO burgers(burger_name, devoured, createDate)VALUES ('Double Cheese Burger', false,CURDATE());
-INSERT INTO burgers(burger_name, devoured, createDate) VALUES ('Big Mac', false,CURDATE());
+INSERT INTO burgers(burger_name, devoured) VALUES ('Hamburger', true);
+INSERT INTO burgers(burger_name, devoured)VALUES ('Double Cheese Burger', false);
+INSERT INTO burgers(burger_name, devoured) VALUES ('Big Mac', false);

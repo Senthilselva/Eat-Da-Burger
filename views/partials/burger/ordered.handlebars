@@ -1,10 +1,13 @@
-
+<h2>Burger! Ready to go </h2>
 <ul>
   {{#each burgers}}
   	{{#unless this.devoured}}
      <li>
+     <span id="readyBurgerBox">
         {{this.burger_name}}
-      </li> 
+     </span>
+     </li> 
+     	{{>allform/updateForm}}
     {{/unless}}
   {{/each}}
 </ul>

@@ -1,0 +1,12 @@
+<div class="row">
+<div class="col-md-6">
+</div>
+<div class="col-md-6">
+	<form action="/burgers/update/{{this.id}}?_method=PUT" method="POST">
+		<input type="hidden" name="devoured" value="true">
+		<button type="submit" id="btnDevour" class="btn btn-default">Devour</button>
+	</form>
+</div>
+{{!-- form end --}}
+</div> 
+{{!-- row end --}}

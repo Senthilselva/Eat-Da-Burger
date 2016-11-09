@@ -36,16 +36,14 @@ var orm = {
 	},
 		// vals is an array of values that we want to save to cols
 		// cols are the columns we want to insert the values into
-	insertOne: function (table, cols, vals, cb) {
+	create: function (table, cols, vals, cb) {
 		var queryString = 'INSERT INTO ' + table;
 
 		queryString = queryString + ' (';
 		queryString = queryString + cols.toString();
-		queryString = queryString + ','+createDate;
 		queryString = queryString + ') ';
 		queryString = queryString + 'VALUES (';
 		queryString = queryString + printQuestionMarks(vals.length);
-		queryString = queryString + 'CURDATE()'
 		queryString = queryString + ') ';
 
 		console.log(queryString);
@@ -57,7 +55,7 @@ var orm = {
 	},
 		// objColVals would be the columns and values that you want to update
 		// an example of objColVals would be {name: panther, sleepy: true}
-	updateOne: function (table, objColVals, condition, cb) {
+	update: function (table, objColVals, condition, cb) {
 		var queryString = 'UPDATE ' + table;
 
 		queryString = queryString + ' SET ';
@@ -71,7 +69,7 @@ var orm = {
 			cb(result);
 		});
 	},
-	deleteOne: function (table, condition, cb) {
+	delete: function (table, condition, cb) {
 		var queryString = 'DELETE FROM ' + table;
 		queryString = queryString + ' WHERE ';
 		queryString = queryString + condition;
