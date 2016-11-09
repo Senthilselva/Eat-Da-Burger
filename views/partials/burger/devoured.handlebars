@@ -1,9 +1,13 @@
+<h2> Burger! Devoured </h2>
+<br>
 <ul>
   {{#each burgers}}
   	{{#if this.devoured}}
      <li>
-        {{this.burger_name}}
-        
+		<span id="devouredBurgerBox">
+        	{{this.burger_name}}
+        </span>
+        <br> <br>
      </li> 
     {{/if}}
   {{/each}}

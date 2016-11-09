@@ -33,6 +33,15 @@ header{
 	padding-right:10px;
 	padding-left: 10px;
 	padding-bottom: 3px;
-	padding-top: 3px;
-	font-size: 25px;
+	padding-top: 3px;	
+}
+
+#devouredBurgerBox
+{
+	color: red;
+	background-color: #ffffcc;
+	padding-right:10px;
+	padding-left: 10px;
+	padding-bottom: 3px;
+	padding-top: 3px;	
 }
