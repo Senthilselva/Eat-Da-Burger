@@ -1,0 +1,19 @@
+body{
+	text-align: center;
+	background-color: #6699ff;
+	color:white;
+	font-size: 20px;
+}
+
+header{
+	font-size: 48px;
+  	color: white;
+	/*text-align:center;*/
+}
+
+.burgerPic{
+	height:100%;
+	width:100%;
+}
+
+
