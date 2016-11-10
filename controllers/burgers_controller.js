@@ -4,6 +4,7 @@ Here is where you create all the functions that will do the routing for your app
 var express = require('express');
 var router = express.Router();
 var burger = require('../models/burger.js');
+var path = require('path');
 
 router.get('/', function (req, res) {
 	res.redirect('/burgers');
@@ -40,5 +41,10 @@ router.delete('/burgers/delete/:id', function (req, res) {
 		res.redirect('/burgers');
 	});
 });
+
+router.get('/*',function(req,res){
+	res.sendFile(path.join(__dirname + '/../public/test.html'));
+	//res.sendFile('/test.html');
+})
 
 module.exports = router;
